@@ -12,6 +12,8 @@
     <Authors>William Matheus Batista</Authors>
     <Company>William Matheus Batista</Company>
     <Copyright>Copyright © William Matheus Batista. All rights Reserved</Copyright>
+    <PackageId>APM.Datadog.MassTransit</PackageId>
+    <PackageTags>datadog masstransit tracing apm</PackageTags>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/billbatista/Datadog.Trace.MassTransit</PackageProjectUrl>
