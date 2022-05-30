@@ -4,7 +4,7 @@
 
 [![GitHub Actions Status](https://github.com/billbatista/Datadog.Trace.MassTransit/workflows/Build/badge.svg?branch=main)](https://github.com/billbatista/Datadog.Trace.MassTransit/actions)
 
-[![Datadog.Trace.MassTransit NuGet Package Downloads](https://img.shields.io/nuget/dt/Datadog.Trace.MassTransit)](https://www.nuget.org/packages/Datadog.Trace.MassTransit)
+[![Datadog.Trace.MassTransit NuGet Package Downloads](https://img.shields.io/nuget/dt/Datadog.Trace.MassTransit)](https://www.nuget.org/packages/APM.Datadog.MassTransit)
 
 [![GitHub Actions Build History](https://buildstats.info/github/chart/billbatista/Datadog.Trace.MassTransit?branch=main&includeBuildsFromPullRequest=false)](https://github.com/billbatista/Datadog.Trace.MassTransit/actions)
 
