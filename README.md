@@ -29,4 +29,4 @@ services.AddMassTransit(x =>
 
 # Important ❗
 
-This library is currently using the __Datadog.Tracer version 1.31.0__, so if you're doing automatic and custom instrumentation, make sure to have the same version of the [Datadog Tracer ](https://github.com/DataDog/dd-trace-dotnet/releases) binary installed on your system, as mentioned by the [documentation](https://docs.datadoghq.com/tracing/setup_overview/setup/dotnet-core/?tab=windows#custom-instrumentation). Speaking of the Datadog APM documentation, I recommend reading it fully to avoid any gotchas.
+This library is currently using the __Datadog.Tracer version 2.17.0__, so if you're doing automatic and custom instrumentation, make sure to have the same version of the [Datadog Tracer ](https://github.com/DataDog/dd-trace-dotnet/releases) binary installed on your system, as mentioned by the [documentation](https://docs.datadoghq.com/tracing/setup_overview/setup/dotnet-core/?tab=windows#custom-instrumentation). Speaking of the Datadog APM documentation, I recommend reading it fully to avoid any gotchas.
