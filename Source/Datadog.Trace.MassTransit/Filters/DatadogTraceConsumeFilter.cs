@@ -1,7 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using GreenPipes;
-using MassTransit;
+﻿using MassTransit;
 
 namespace Datadog.Trace.MassTransit.Filters
 {
@@ -16,7 +13,7 @@ namespace Datadog.Trace.MassTransit.Filters
         {
             ulong? parentSpanId = null;
             ulong? traceId = null;
-            SpanContext? propagatedContext = null;
+            ISpanContext? propagatedContext = null;
 
             if (context.Headers.TryGetHeader(MassTransitMessageHeader.TraceId, out var traceString))
             {
@@ -33,7 +30,11 @@ namespace Datadog.Trace.MassTransit.Filters
                 propagatedContext = new SpanContext(traceId, parentSpanId.Value);
             }
 
-            using (var scope = Tracer.Instance.StartActive(MassTransitOperationName.Transport.Receive, propagatedContext))
+            var spanCreationSettings = new SpanCreationSettings
+            {
+                Parent = propagatedContext
+            };
+            using (var scope = Tracer.Instance.StartActive(MassTransitOperationName.Transport.Receive, spanCreationSettings))
             {
                 DatadogTraceSpanHelper.SetSpanTags(context, scope);
                 await next.Send(context);

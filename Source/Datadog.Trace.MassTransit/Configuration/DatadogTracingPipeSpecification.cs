@@ -1,8 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Datadog.Trace.MassTransit.Filters;
-using GreenPipes;
+﻿using Datadog.Trace.MassTransit.Filters;
 using MassTransit;
+using MassTransit.Configuration;
 
 namespace Datadog.Trace.MassTransit.Configuration
 {
