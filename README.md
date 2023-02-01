@@ -1,3 +1,6 @@
+# EOL
+Since I don't use MassTransit anymore (and don't have access to a Datadog API key as well), this package won't receive any new features or code maintenance. As per the license, your are free to copy it and improve it on your own.
+
 ![Banner](Images/Banner.png)
 
 # Datadog Trace MassTransit
